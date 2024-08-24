@@ -1,0 +1,11 @@
+Design Patterns 
+
+
+SRP SOC Single Resposibility 
+
+
+
+Singleton 
+borg patterns: 
+    involes the use of moonstate specific class 
+

@@ -1,0 +1,16 @@
+Single Responsibilty Principle 
+    A class shold have only reason to change 
+    basically make the class to do just one thing 
+    if it does more than just one thing 
+
+    then make it into a different class and 
+    inheret it or make it static 
+
+
+Open Closed Principle 
+    when a base class is created then 
+    usually they have to abstrsct class which 
+    would be inhearted by the next class 
+
+`
+Liskov Substution Principle 
