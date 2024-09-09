@@ -87,35 +87,40 @@ class BetterFilter(Filter):
             if spec.is_satisfied(item):
                 yield item
 
+test_color = Color.GREEN
 
-apple = Product('Apple', Color.GREEN, Size.SMALL)
-tree = Product('Tree', Color.GREEN, Size.LARGE)
-house = Product('House', Color.BLUE, Size.LARGE)
+if Color.GREEN == test_color: 
+    print("Working")
+else: 
+    print("No")
+# apple = Product('Apple', Color.GREEN, Size.SMALL)
+# tree = Product('Tree', Color.GREEN, Size.LARGE)
+# house = Product('House', Color.BLUE, Size.LARGE)
 
-products = [apple, tree, house]
+# products = [apple, tree, house]
 
-pf = ProductFilter()
-print('Green products (old):')
-for p in pf.filter_by_color(products, Color.GREEN):
-    print(f' - {p.name} is green')
+# pf = ProductFilter()
+# print('Green products (old):')
+# for p in pf.filter_by_color(products, Color.GREEN):
+#     print(f' - {p.name} is green')
 
-# ^ BEFORE
+# # ^ BEFORE
 
-# v AFTER
-bf = BetterFilter()
+# # v AFTER
+# bf = BetterFilter()
 
-print('Green products (new):')
-green = ColorSpecification(Color.GREEN)
-for p in bf.filter(products, green):
-    print(f' - {p.name} is green')
+# print('Green products (new):')
+# green = ColorSpecification(Color.GREEN)
+# for p in bf.filter(products, green):
+#     print(f' - {p.name} is green')
 
-print('Large products:')
-large = SizeSpecification(Size.LARGE)
-for p in bf.filter(products, large):
-    print(f' - {p.name} is large')
+# print('Large products:')
+# large = SizeSpecification(Size.LARGE)
+# for p in bf.filter(products, large):
+#     print(f' - {p.name} is large')
 
-print('Large blue items:')
-# large_blue = AndSpecification(large, ColorSpecification(Color.BLUE))
-large_blue = large and ColorSpecification(Color.BLUE)
-for p in bf.filter(products, large_blue):
-    print(f' - {p.name} is large and blue')
+# print('Large blue items:')
+# # large_blue = AndSpecification(large, ColorSpecification(Color.BLUE))
+# large_blue = large and ColorSpecification(Color.BLUE)
+# for p in bf.filter(products, large_blue):
+#     print(f' - {p.name} is large and blue')

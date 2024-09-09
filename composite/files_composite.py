@@ -38,7 +38,7 @@ if __name__ == "__main__":
 
     # Create a folder and add files to it
     folder1 = Folder("folder1")
-    folder1.add(file1)
+    folder1.add(file1) 
     folder1.add(file2)
 
     # Create a main folder and add a file and folder to it
