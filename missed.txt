@@ -1,0 +1,10 @@
+Prototype 
+Command 
+Flyweight 
+
+
+Need recap 
+Facade 
+Proxy 
+Bridge 
+Adapter 

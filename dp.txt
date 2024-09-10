@@ -6,6 +6,28 @@ SRP SOC Single Resposibility
 
 
 Singleton 
+singleton seems cool too but not sure if every design patterns requiers 
 borg patterns: 
     involes the use of moonstate specific class 
+
+
+
+Composite: 
+seems like a good way to work with json files since thats like adding 
+a series of leaves onto a tree and adding some changes to it 
+
+Flyweight 
+seems like a good way to reduce data stored in db.. but does increase 
+complexting 
+
+Parse 
+this feels like somethign i would need for latex understand 
+and just good coding and other than that doesnt really be used much 
+
+decorator 
+This is og i guess a lot could be implemented using this than manuelly editing them 
+
+chain of command
+this feels like when we take a single json and have multiple chain of functions 
+acting over it this would be usefuel in that (have to test this theory) 
 
